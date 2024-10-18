@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 const path = require('path')
 const _dirname = path.dirname("");
-const buildpath = path.join(_dirname, "../frontendTravelApp/build");
+const buildpath = path.join(_dirname, "../travel-frontend/build");
 app.use(express.static(buildpath));
 app.use(cors({
   "origin" : "*"
